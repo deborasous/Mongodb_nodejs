@@ -10,6 +10,19 @@ const UserList = () => {
     });
   }, []);
 
+
+//   ou
+//   useEffect(() => {
+//   fetch("http://localhost:8080/users")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       setUsers(data);
+//     })
+//     .catch((error) => {
+//       console.error("Erro ao obter os usuários:", error);
+//     });
+// }, []);
+
   return (
     <div>
       <h1>Lista de usuários</h1>
